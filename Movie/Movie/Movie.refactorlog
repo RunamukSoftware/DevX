@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="76043de3-e394-4422-90cc-a2e5db0a0251" ChangeDateTime="10/04/2018 21:12:44">
+    <Property Name="ElementName" Value="[dbo].[Actors_Index]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ActorDvd]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7b6ed531-8911-47ec-921b-eb2d8f3838dc" ChangeDateTime="10/04/2018 21:12:56">
+    <Property Name="ElementName" Value="[dbo].[Actors_Names]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Actor]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c442b140-c630-4565-ae19-037361c52c92" ChangeDateTime="10/04/2018 21:13:11">
+    <Property Name="ElementName" Value="[dbo].[Directors_Index]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[DirectorDvd]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a9d9eed-d5c2-4b0f-b129-f632fb15eee0" ChangeDateTime="10/04/2018 21:13:24">
+    <Property Name="ElementName" Value="[dbo].[Directors_Names]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Director]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="889f3f84-d387-434e-a10b-6793ffcf0e9b" ChangeDateTime="10/04/2018 21:13:40">
+    <Property Name="ElementName" Value="[dbo].[DVDTitles]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Dvd]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c56e972-c2db-42fd-a67c-e037e31d4965" ChangeDateTime="10/04/2018 22:48:28">
+    <Property Name="ElementName" Value="[dbo].[Actor].[Actor_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Actor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ActorID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cce4eda4-89c8-4146-bb9a-93f82ab0dfd5" ChangeDateTime="10/04/2018 22:48:40">
+    <Property Name="ElementName" Value="[dbo].[Actor].[Actor]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Actor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[Name]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="84ece300-7e67-4476-8070-95df244595e6" ChangeDateTime="10/04/2018 22:48:52">
+    <Property Name="ElementName" Value="[dbo].[Director].[Director_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Director]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DirectorID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6c4bfb6e-def9-4626-9f6e-2167ce8d1903" ChangeDateTime="10/04/2018 22:49:03">
+    <Property Name="ElementName" Value="[dbo].[Director].[Director]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Director]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[Name]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97cedf4e-3ada-4408-81a9-abb64426fa50" ChangeDateTime="10/04/2018 22:49:28">
+    <Property Name="ElementName" Value="[dbo].[ActorDvd].[Actor_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ActorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ActorID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="db6cb52e-92da-44b0-bac2-e36287ce9abe" ChangeDateTime="10/04/2018 22:49:49">
+    <Property Name="ElementName" Value="[dbo].[ActorDvd].[DVDList_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ActorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DvdID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ba19b41e-a5bb-4435-b6b4-9eb9f6bac40e" ChangeDateTime="10/04/2018 22:50:03">
+    <Property Name="ElementName" Value="[dbo].[Dvd].[ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DvdID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="13c98cb6-1153-470f-a3e1-43e54151c0d2" ChangeDateTime="10/04/2018 22:50:58">
+    <Property Name="ElementName" Value="[dbo].[ActorDvd].[ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ActorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ActorDvdID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f04435d-8a26-409c-8f5c-35757ae55c18" ChangeDateTime="10/04/2018 22:51:31">
+    <Property Name="ElementName" Value="[dbo].[DirectorDvd].[ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DirectorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DirectorDvdID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e63704ef-7cdd-4ac9-aa6a-0fa14b4c8a3c" ChangeDateTime="10/04/2018 22:51:40">
+    <Property Name="ElementName" Value="[dbo].[DirectorDvd].[Director_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DirectorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DirectorID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="794cdc17-fa01-458e-8937-defcc8b27ba9" ChangeDateTime="10/04/2018 22:51:56">
+    <Property Name="ElementName" Value="[dbo].[DirectorDvd].[DVDList_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DirectorDvd]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DvdID]" />
+  </Operation>
+</Operations>

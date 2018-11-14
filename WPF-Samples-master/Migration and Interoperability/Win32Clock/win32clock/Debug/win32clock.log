@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  win32clock.cpp
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  stdafx.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  win32clock.vcxproj -> D:\Dev\WPF-Samples-master\Migration and Interoperability\Win32Clock\Win32CLOCK\Debug\win32clock.exe

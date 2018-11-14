@@ -1,0 +1,85 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Win32HostingWPFPage, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly UIAutomationProvider, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Class MyPageEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsOK 'get set' : 
+  Methods:
+    get_IsOK(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsOK(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Class WPFPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Controls.Grid
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String EnteredZip 'get set' : 
+    System.String EnteredState 'get set' : 
+    System.String EnteredCity 'get set' : 
+    System.String EnteredAddress 'get set' : 
+    System.String EnteredName 'get set' : 
+    System.Windows.Media.Brush DefaultForeBrush 'get set' : 
+    System.Windows.FontWeight DefaultFontWeight 'get set' : 
+    Double DefaultFontSize 'get set' : 
+    System.Windows.FontStyle DefaultFontStyle 'get set' : 
+    System.Windows.Media.FontFamily DefaultFontFamily 'get set' : 
+  Events:
+    ButtonClickHandler OnButtonClicked: SpecialName
+  Methods:
+    add_OnButtonClicked(ButtonClickHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnButtonClicked(ButtonClickHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultFontFamily(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultFontFamily(FontFamily): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultFontStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultFontStyle(FontStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultFontSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultFontSize(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultFontWeight(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultFontWeight(FontWeight): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultForeBrush(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultForeBrush(Brush): PrivateScope, Public, HideBySig, SpecialName
+    get_EnteredName(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnteredName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EnteredAddress(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnteredAddress(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EnteredCity(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnteredCity(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EnteredState(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnteredState(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EnteredZip(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnteredZip(String): PrivateScope, Public, HideBySig, SpecialName
+Class WPFPage+ButtonClickHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MyPageEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MyPageEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WPFPageHost: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    WPFPage hostedPage : Public, Static
+    System.Windows.Media.Brush initBackBrush : Public, Static
+    System.Windows.Media.Brush initForeBrush : Public, Static
+    System.Windows.Media.FontFamily initFontFamily : Public, Static
+    System.Windows.FontStyle initFontStyle : Public, Static
+    System.Windows.FontWeight initFontWeight : Public, Static
+    Double initFontSize : Public, Static

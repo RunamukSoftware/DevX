@@ -1,0 +1,12 @@
+﻿  YCbCrPixelFormatConverter.cpp
+  Utility.cpp
+  Main.cpp
+  CMYKpixelformatconverter.cpp
+  BasePixelFormatConverter.cpp
+  BaseEncoder.cpp
+  BaseDecoder.cpp
+  AitEncoder.cpp
+  AitDecoder.cpp
+AitDecoder.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library Debug\AitCodec.lib and object Debug\AitCodec.exp
+  aitcodec.vcxproj -> D:\Dev\WPF-Samples-master\Graphics\AITCodec\cpp\Debug\AitCodec.dll

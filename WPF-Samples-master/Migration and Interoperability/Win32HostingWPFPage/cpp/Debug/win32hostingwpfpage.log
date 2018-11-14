@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  Win32HostingWPFPage.cpp
+  WPFPage.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  stdafx.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  win32hostingwpfpage.vcxproj -> D:\Dev\WPF-Samples-master\Migration and Interoperability\Win32HostingWPFPage\cpp\Debug\Win32HostingWPFPage.exe

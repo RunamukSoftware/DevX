@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  hwndInWPF.cpp
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  hwndInWPF.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  hwndInWPF.vcxproj -> D:\Dev\WPF-Samples-master\Migration and Interoperability\HWNDInWPF\hwndInWPF\Debug\hwndInWPF.dll

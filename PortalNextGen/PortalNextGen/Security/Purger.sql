@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Purger]
+    AUTHORIZATION [dbo];
+

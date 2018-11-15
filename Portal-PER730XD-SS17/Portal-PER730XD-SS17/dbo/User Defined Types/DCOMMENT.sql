@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DCOMMENT]
+    FROM NVARCHAR (200) NULL;
+

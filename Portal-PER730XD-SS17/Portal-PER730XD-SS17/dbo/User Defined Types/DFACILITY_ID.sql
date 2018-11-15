@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DFACILITY_ID]
+    FROM VARCHAR (40) NULL;
+

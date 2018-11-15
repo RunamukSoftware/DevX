@@ -1,0 +1,16 @@
+﻿CREATE PROCEDURE [User].[uspGetUsers]
+AS
+    BEGIN
+        SET NOCOUNT ON;
+
+        SELECT
+            [iu].[UserID],
+            [iu].[RoleID],
+            [iu].[UserSecurityID],
+            [iu].[LoginName]
+        FROM
+            [User].[User] AS [iu];
+    END;
+GO
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'', @level0type = N'SCHEMA', @level0name = N'User', @level1type = N'PROCEDURE', @level1name = N'uspGetUsers';
+

@@ -1,0 +1,8 @@
+﻿
+CREATE FUNCTION [dbo].[AddOne]
+    (@n AS BIGINT)
+RETURNS BIGINT
+AS
+BEGIN
+    RETURN @n + 1;
+END;

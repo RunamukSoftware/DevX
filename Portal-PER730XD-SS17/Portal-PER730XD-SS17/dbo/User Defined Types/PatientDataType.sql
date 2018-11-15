@@ -1,0 +1,21 @@
+﻿CREATE TYPE [dbo].[PatientDataType] AS TABLE (
+    [Id]               UNIQUEIDENTIFIER NOT NULL,
+    [PatientSessionId] UNIQUEIDENTIFIER NULL,
+    [DeviceSessionId]  UNIQUEIDENTIFIER NULL,
+    [LastName]         NVARCHAR (MAX)   NULL,
+    [MiddleName]       NVARCHAR (MAX)   NULL,
+    [FirstName]        NVARCHAR (MAX)   NULL,
+    [FullName]         NVARCHAR (MAX)   NULL,
+    [Gender]           NVARCHAR (MAX)   NULL,
+    [ID1]              NVARCHAR (MAX)   NULL,
+    [ID2]              NVARCHAR (MAX)   NULL,
+    [DOB]              NVARCHAR (MAX)   NULL,
+    [Weight]           NVARCHAR (MAX)   NULL,
+    [WeightUOM]        NVARCHAR (MAX)   NULL,
+    [Height]           NVARCHAR (MAX)   NULL,
+    [HeightUOM]        NVARCHAR (MAX)   NULL,
+    [BSA]              NVARCHAR (MAX)   NULL,
+    [Location]         NVARCHAR (MAX)   NULL,
+    [PatientType]      NVARCHAR (MAX)   NULL,
+    [TimestampUTC]     DATETIME         NOT NULL);
+

@@ -1,0 +1,6 @@
+ExePath=C:\Program Files (x86)\Spacelabs\ICS\Clinical Access\
+testbed=CP255
+SLMBed=Room3(2666)
+ChangeWaveformScale=CP255
+12leads=CP255
+alarmsview=CP255

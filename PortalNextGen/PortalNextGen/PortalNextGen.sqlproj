@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>PortalNextGen</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{96a79231-af31-47b8-a841-4c8dc6e23c4c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>PortalNextGen</RootNamespace>
+    <AssemblyName>PortalNextGen</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <QueryStoreCaptureMode>All</QueryStoreCaptureMode>
+    <QueryStoreDesiredState>ReadWrite</QueryStoreDesiredState>
+    <QueryStoreFlushInterval>900</QueryStoreFlushInterval>
+    <QueryStoreStatsInterval>60</QueryStoreStatsInterval>
+    <QueryStoreMaxPlansPerQuery>200</QueryStoreMaxPlansPerQuery>
+    <QueryStoreStaleQueryThreshold>90</QueryStoreStaleQueryThreshold>
+    <QueryStoreMaxStorageSize>2048</QueryStoreMaxStorageSize>
+    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
+    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
+    <DbScopedConfigParameterSniffing>On</DbScopedConfigParameterSniffing>
+    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>True</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>True</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>True</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>140</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <CreateProjectFromDatabaseCompleted>True</CreateProjectFromDatabaseCompleted>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Configuration\Tables\" />
+    <Folder Include="Intesys\" />
+    <Folder Include="Intesys\Tables\" />
+    <Folder Include="old\" />
+    <Folder Include="old\Tables\" />
+    <Folder Include="DataLoader\" />
+    <Folder Include="DataLoader\Tables\" />
+    <Folder Include="HL7\" />
+    <Folder Include="HL7\Tables\" />
+    <Folder Include="TechSupport\" />
+    <Folder Include="TechSupport\Tables\" />
+    <Folder Include="ICS\" />
+    <Folder Include="ICS\Tables\" />
+    <Folder Include="User\" />
+    <Folder Include="User\Tables\" />
+    <Folder Include="Purger\" />
+    <Folder Include="Purger\Tables\" />
+    <Folder Include="Archive\" />
+    <Folder Include="Archive\Tables\" />
+    <Folder Include="CDR\" />
+    <Folder Include="CDR\Tables\" />
+    <Folder Include="old\Views\" />
+    <Folder Include="old\Functions\" />
+    <Folder Include="User\Stored Procedures\" />
+    <Folder Include="old\Stored Procedures\" />
+    <Folder Include="ClinicalAccess\" />
+    <Folder Include="ClinicalAccess\Stored Procedures\" />
+    <Folder Include="DataLoader\Stored Procedures\" />
+    <Folder Include="HL7\Stored Procedures\" />
+    <Folder Include="DM3\" />
+    <Folder Include="DM3\Stored Procedures\" />
+    <Folder Include="Purger\Stored Procedures\" />
+    <Folder Include="Intesys\Stored Procedures\" />
+    <Folder Include="PrintManager\" />
+    <Folder Include="PrintManager\Stored Procedures\" />
+    <Folder Include="Archive\Stored Procedures\" />
+    <Folder Include="CEI\" />
+    <Folder Include="CEI\Stored Procedures\" />
+    <Folder Include="TechSupport\Stored Procedures\" />
+    <Folder Include="old\User Defined Types\" />
+    <Folder Include="Security\" />
+    <Folder Include="old\Sequences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Configuration\Tables\ValuePatient.sql" />
+    <Build Include="Intesys\Tables\SavedEventBeatTimeLog.sql" />
+    <Build Include="old\Tables\PatientSession.sql" />
+    <Build Include="Intesys\Tables\SiteLink.sql" />
+    <Build Include="old\Tables\AlarmStatus.sql" />
+    <Build Include="old\Tables\PatientSessionMap.sql" />
+    <Build Include="Intesys\Tables\SavedEventCalipers.sql" />
+    <Build Include="Configuration\Tables\ValueFactory.sql" />
+    <Build Include="old\Tables\AnalysisTime.sql" />
+    <Build Include="old\Tables\DeviceInformation.sql" />
+    <Build Include="Intesys\Tables\Procedure.sql" />
+    <Build Include="Configuration\Tables\Configuration.sql" />
+    <Build Include="Intesys\Tables\SavedEventVital.sql" />
+    <Build Include="Intesys\Tables\ResultFlag.sql" />
+    <Build Include="Configuration\Tables\DatabaseVersion.sql" />
+    <Build Include="old\Tables\RemovedAlarm.sql" />
+    <Build Include="Intesys\Tables\Result.sql" />
+    <Build Include="Intesys\Tables\TemplateSetInformation.sql" />
+    <Build Include="DataLoader\Tables\UltraViewTemporarySettings.sql" />
+    <Build Include="old\Tables\Device.sql" />
+    <Build Include="Intesys\Tables\Monitor.sql" />
+    <Build Include="DataLoader\Tables\EnhancedTelemetryTemporarySettings.sql" />
+    <Build Include="old\Tables\GeneralAlarm.sql" />
+    <Build Include="Intesys\Tables\ProductAccess.sql" />
+    <Build Include="HL7\Tables\PatientLink.sql" />
+    <Build Include="Intesys\Tables\Person.sql" />
+    <Build Include="old\Tables\AnalysisEvent.sql" />
+    <Build Include="HL7\Tables\InboundMessage.sql" />
+    <Build Include="old\Tables\TopicType.sql" />
+    <Build Include="HL7\Tables\OutputQueue.sql" />
+    <Build Include="old\Tables\ApplicationSetting.sql" />
+    <Build Include="old\Tables\TopicSession.sql" />
+    <Build Include="Intesys\Tables\Preference.sql" />
+    <Build Include="HL7\Tables\MessageList.sql" />
+    <Build Include="Intesys\Tables\PersonName.sql" />
+    <Build Include="old\Tables\PacerSpikeLog.sql" />
+    <Build Include="HL7\Tables\MessageAcknowledgement.sql" />
+    <Build Include="old\Tables\Log.sql" />
+    <Build Include="Intesys\Tables\TranslateList.sql" />
+    <Build Include="HL7\Tables\InputQueue.sql" />
+    <Build Include="TechSupport\Tables\WaveformIndexRate.sql" />
+    <Build Include="old\Tables\Status.sql" />
+    <Build Include="Intesys\Tables\TestGroupDetail.sql" />
+    <Build Include="HL7\Tables\InputQueueHistory.sql" />
+    <Build Include="ICS\Tables\Waveform.sql" />
+    <Build Include="old\Tables\StatusSet.sql" />
+    <Build Include="User\Tables\Setting.sql" />
+    <Build Include="Intesys\Tables\TwelveLeadReportNew.sql" />
+    <Build Include="old\Tables\TableRowSpace.sql" />
+    <Build Include="Intesys\Tables\SystemParameter.sql" />
+    <Build Include="Intesys\Tables\TwelveLeadReportEdit.sql" />
+    <Build Include="ICS\Tables\PatientDemographic.sql" />
+    <Build Include="ICS\Tables\Room.sql" />
+    <Build Include="old\Tables\MonitorX.sql" />
+    <Build Include="Intesys\Tables\SystemGenerationAudit.sql" />
+    <Build Include="Intesys\Tables\TwelveLeadReport.sql" />
+    <Build Include="old\Tables\AlarmResource.sql" />
+    <Build Include="Intesys\Tables\SendSystem.sql" />
+    <Build Include="old\Tables\Metadata.sql" />
+    <Build Include="Intesys\Tables\EncounterTransferHistory.sql" />
+    <Build Include="ICS\Tables\Parameter.sql" />
+    <Build Include="Intesys\Tables\Security.sql" />
+    <Build Include="Intesys\Tables\EncounterMap.sql" />
+    <Build Include="old\Tables\Patient.sql" />
+    <Build Include="Intesys\Tables\Encounter.sql" />
+    <Build Include="ICS\Tables\Numeric.sql" />
+    <Build Include="old\Tables\AuditLog.sql" />
+    <Build Include="Intesys\Tables\SavedEventLog.sql" />
+    <Build Include="Intesys\Tables\DiagnosisHealthCareProviderInt.sql" />
+    <Build Include="ICS\Tables\MonitoringDevice.sql" />
+    <Build Include="old\Tables\LimitAlarm.sql" />
+    <Build Include="Intesys\Tables\ReferenceRange.sql" />
+    <Build Include="old\Tables\Vital.sql" />
+    <Build Include="Intesys\Tables\DiagnosisRelatedGroup.sql" />
+    <Build Include="old\Tables\LimitChange.sql" />
+    <Build Include="Intesys\Tables\ProductMap.sql" />
+    <Build Include="Intesys\Tables\Diagnosis.sql" />
+    <Build Include="ICS\Tables\Encounter.sql" />
+    <Build Include="Purger\Tables\Log.sql" />
+    <Build Include="old\Tables\LiveData.sql" />
+    <Build Include="Intesys\Tables\OrderMap.sql" />
+    <Build Include="Intesys\Tables\CodeCategory.sql" />
+    <Build Include="ICS\Tables\DeviceSession.sql" />
+    <Build Include="old\Tables\DeviceSession.sql" />
+    <Build Include="Intesys\Tables\OutboundQueue.sql" />
+    <Build Include="Intesys\Tables\ClientMap.sql" />
+    <Build Include="ICS\Tables\Alarm.sql" />
+    <Build Include="old\Tables\WaveformPrint.sql" />
+    <Build Include="Intesys\Tables\PatientLink.sql" />
+    <Build Include="Intesys\Tables\ChannelVital.sql" />
+    <Build Include="ICS\Tables\AcquisitionModule.sql" />
+    <Build Include="old\Tables\WaveformLive.sql" />
+    <Build Include="Intesys\Tables\PatientProcedure.sql" />
+    <Build Include="Intesys\Tables\ChannelType.sql" />
+    <Build Include="old\Tables\WaveformAnnotation.sql" />
+    <Build Include="Intesys\Tables\Product.sql" />
+    <Build Include="Intesys\Tables\ConfigurationValue.sql" />
+    <Build Include="old\Tables\Waveform.sql" />
+    <Build Include="Intesys\Tables\BroadcastMessage.sql" />
+    <Build Include="Intesys\Tables\SavedEventWaveform.sql" />
+    <Build Include="old\Tables\Encounter.sql" />
+    <Build Include="Intesys\Tables\Telephone.sql" />
+    <Build Include="Intesys\Tables\HealthCareProviderContact.sql" />
+    <Build Include="Intesys\Tables\AutoUpdateLog.sql" />
+    <Build Include="Intesys\Tables\HealthCareProviderMap.sql" />
+    <Build Include="Intesys\Tables\AutoUpdate.sql" />
+    <Build Include="TechSupport\Tables\InputRate.sql" />
+    <Build Include="Intesys\Tables\OrderLine.sql" />
+    <Build Include="Intesys\Tables\AuditLog.sql" />
+    <Build Include="User\Tables\Role.sql" />
+    <Build Include="Intesys\Tables\Order.sql" />
+    <Build Include="Intesys\Tables\AlarmWaveform.sql" />
+    <Build Include="Intesys\Tables\MessageLog.sql" />
+    <Build Include="Intesys\Tables\AlarmRetrieved.sql" />
+    <Build Include="User\Tables\Password.sql" />
+    <Build Include="Intesys\Tables\MonitorRequest.sql" />
+    <Build Include="User\Tables\Group.sql" />
+    <Build Include="Intesys\Tables\LoaderStatistic.sql" />
+    <Build Include="Intesys\Tables\Address.sql" />
+    <Build Include="User\Tables\Contact.sql" />
+    <Build Include="Intesys\Tables\PatientListLink.sql" />
+    <Build Include="Intesys\Tables\Account.sql" />
+    <Build Include="User\Tables\User.sql" />
+    <Build Include="Intesys\Tables\PatientList.sql" />
+    <Build Include="Intesys\Tables\PatientMonitor.sql" />
+    <Build Include="Intesys\Tables\PatientImage.sql" />
+    <Build Include="Intesys\Tables\PrintJob.sql" />
+    <Build Include="Intesys\Tables\Patient.sql" />
+    <Build Include="Intesys\Tables\PatientSavedEvent.sql" />
+    <Build Include="Intesys\Tables\ParameterTimeTag.sql" />
+    <Build Include="Intesys\Tables\OrganizationShiftSchedule.sql" />
+    <Build Include="Intesys\Tables\StarterSet.sql" />
+    <Build Include="Intesys\Tables\ProcedureHealthCareProvider.sql" />
+    <Build Include="Intesys\Tables\WaveformLive.sql" />
+    <Build Include="Intesys\Tables\PrintJobWaveform.sql" />
+    <Build Include="Intesys\Tables\Waveform.sql" />
+    <Build Include="Intesys\Tables\MedicalRecordNumberMap.sql" />
+    <Build Include="Intesys\Tables\Organization.sql" />
+    <Build Include="Intesys\Tables\Gateway.sql" />
+    <Build Include="Intesys\Tables\MiscellaneousCode.sql" />
+    <Build Include="Intesys\Tables\UserSavedEvent.sql" />
+    <Build Include="Intesys\Tables\Feature.sql" />
+    <Build Include="Configuration\Tables\ValueGlobal.sql" />
+    <Build Include="Intesys\Tables\GatewayServer.sql" />
+    <Build Include="Intesys\Tables\ExternalOrganization.sql" />
+    <Build Include="Intesys\Tables\VitalLiveTemporary.sql" />
+    <Build Include="Intesys\Tables\EventLog.sql" />
+    <Build Include="ICS\Tables\Bed.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexDecisionLog.sql" />
+    <Build Include="Intesys\Tables\VitalLive.sql" />
+    <Build Include="Intesys\Tables\EventConfiguration.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexDecisionField.sql" />
+    <Build Include="ICS\Tables\Facility.sql" />
+    <Build Include="old\Tables\ResourceString.sql" />
+    <Build Include="Intesys\Tables\Environment.sql" />
+    <Build Include="Archive\Tables\FlowsheetEntry.sql" />
+    <Build Include="old\Tables\MonitorLoaderDuplicateInformation.sql" />
+    <Build Include="Intesys\Tables\EncounterToDiagnosisHealthCareProviderInt.sql" />
+    <Build Include="ICS\Tables\Organization.sql" />
+    <Build Include="Archive\Tables\FlowsheetDetail.sql" />
+    <Build Include="old\Tables\FeedType.sql" />
+    <Build Include="Intesys\Tables\SystemGeneration.sql" />
+    <Build Include="Archive\Tables\Flowsheet.sql" />
+    <Build Include="ICS\Tables\Patient.sql" />
+    <Build Include="old\Tables\GlobalDataSystemCodeMap.sql" />
+    <Build Include="Intesys\Tables\Translate.sql" />
+    <Build Include="Archive\Tables\InsurancePolicy.sql" />
+    <Build Include="old\Tables\LeadConfiguration.sql" />
+    <Build Include="Intesys\Tables\TestGroup.sql" />
+    <Build Include="Archive\Tables\InsurancePlan.sql" />
+    <Build Include="old\Tables\Enum.sql" />
+    <Build Include="Intesys\Tables\HealthCareProvider.sql" />
+    <Build Include="Archive\Tables\Guarantor.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexSearchWork.sql" />
+    <Build Include="old\Tables\PrintRequestData.sql" />
+    <Build Include="Intesys\Tables\PatientListDetail.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexSearchResults.sql" />
+    <Build Include="old\Tables\PrintRequest.sql" />
+    <Build Include="Intesys\Tables\NextOfKin.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexSearchField.sql" />
+    <Build Include="old\Tables\Event.sql" />
+    <Build Include="Intesys\Tables\HealthCareProviderSpecialty.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexPatientLink.sql" />
+    <Build Include="Intesys\Tables\Alarm.sql" />
+    <Build Include="old\Tables\PrintJob.sql" />
+    <Build Include="Intesys\Tables\HealthCareProviderLicense.sql" />
+    <Build Include="Archive\Tables\MasterPatientIndexDecisionQueue.sql" />
+    <Build Include="old\Tables\PrintRequestDescription.sql" />
+    <Build Include="Intesys\Tables\SecurityDifference.sql" />
+    <Build Include="Intesys\Tables\BeatTimeLog.sql" />
+    <Build Include="CDR\Tables\RestrictedOrganization.sql" />
+    <Build Include="old\Tables\Trend.sql" />
+    <Build Include="Intesys\Tables\SystemGenerationComment.sql" />
+    <Build Include="CDR\Tables\NavigationButton.sql" />
+    <Build Include="Intesys\Tables\BinInformation.sql" />
+    <Build Include="Intesys\Tables\OrderGroup.sql" />
+    <Build Include="CDR\Tables\DocumentGroup.sql" />
+    <Build Include="Intesys\Tables\PrintJobEnhancedTelemetryVital.sql" />
+    <Build Include="old\Tables\PrintBlob.sql" />
+    <Build Include="Intesys\Tables\PreferenceDifference.sql" />
+    <Build Include="Intesys\Tables\PrintJobEnhancedTelemetryAlarm.sql" />
+    <Build Include="Configuration\Tables\ValueUnit.sql" />
+    <Build Include="old\Tables\ChannelInformation.sql" />
+    <Build Include="Intesys\Tables\PrintJobEnhancedTelemetryWaveform.sql" />
+    <Build Include="Intesys\Tables\PatientChannel.sql" />
+    <Build Include="old\Views\vwMetadata.sql" />
+    <Build Include="old\Views\vwLegacyMonitor.sql" />
+    <Build Include="old\Views\vwLegacyChannelTypes.sql" />
+    <Build Include="old\Views\vwFeedGlobalDataSystemCodes.sql" />
+    <Build Include="old\Views\vwDiscardedOverlappingLegacyWaveformData.sql" />
+    <Build Include="old\Views\vwDeviceSessionInfo.sql" />
+    <Build Include="old\Views\vwDevicePatientIdActive.sql" />
+    <Build Include="old\Views\vwxLatestDeviceInformation.sql" />
+    <Build Include="old\Views\vwWaveformSampleRate.sql" />
+    <Build Include="old\Views\vwTopicTypes.sql" />
+    <Build Include="old\Views\vwPrintJobsWaveform.sql" />
+    <Build Include="old\Views\vwPatientTopicSessions.sql" />
+    <Build Include="old\Views\vwPatientDaysSinceLastDischarge.sql" />
+    <Build Include="old\Views\vwMetaDataValueNum.sql" />
+    <Build Include="old\Views\vwLimitAlarmsLite.sql" />
+    <Build Include="old\Views\vwLimitAlarms.sql" />
+    <Build Include="old\Views\vwLegacyWaveform.sql" />
+    <Build Include="old\Views\vwLegacyPatientMonitor.sql" />
+    <Build Include="old\Views\vwLegacyMonitorCombined.sql" />
+    <Build Include="old\Views\vwGeneralAlarmsLite.sql" />
+    <Build Include="old\Views\vwGeneralAlarms.sql" />
+    <Build Include="old\Views\vwDiscardedOverlappingWaveformData.sql" />
+    <Build Include="old\Views\vwAvailableDataTypes.sql" />
+    <Build Include="old\Views\vwActivePatientChannels.sql" />
+    <Build Include="old\Views\vwVitalsData.sql" />
+    <Build Include="old\Views\vwStatusData.sql" />
+    <Build Include="old\Views\vwPatientChannelLegacy.sql" />
+    <Build Include="old\Views\vwLegacyPatientMonitorCombined.sql" />
+    <Build Include="old\Views\vwLiveVitalsData.sql" />
+    <Build Include="old\Views\vwDeviceSessionAssignment.sql" />
+    <Build Include="old\Views\vwPatientSessions.sql" />
+    <Build Include="old\Views\vwPatients.sql" />
+    <Build Include="old\Views\vwMonitors.sql" />
+    <Build Include="old\Views\vwDeviceSessionOrganization.sql" />
+    <Build Include="old\Views\vwCombinedEncounters.sql" />
+    <Build Include="old\Views\vwStitchedPatients.sql" />
+    <Build Include="old\Views\vwPrintJobs.sql" />
+    <Build Include="old\Views\vwPatientSessionOrganization.sql" />
+    <Build Include="old\Functions\FQDN.sql" />
+    <Build Include="old\Functions\ufnZeroIfBigger.sql" />
+    <Build Include="old\Functions\ufnMarkIdAsDuplicate.sql" />
+    <Build Include="old\Functions\ufnHL7GetPatientIDFromQueryItemType.sql" />
+    <Build Include="old\Functions\ufnSplit.sql" />
+    <Build Include="old\Functions\ufnVitalMerge.sql" />
+    <Build Include="old\Functions\ufnDeviceSessionInformation.sql" />
+    <Build Include="old\Functions\fntZeroIfBigger.sql" />
+    <Build Include="old\Functions\fntDeviceInfoSelect.sql" />
+    <Build Include="User\Stored Procedures\uspChangeUserRole.sql" />
+    <Build Include="old\Stored Procedures\uspGetRawECGData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveVitalsDataSet.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetProcStatList.sql" />
+    <Build Include="User\Stored Procedures\uspUpdateRole.sql" />
+    <Build Include="old\Stored Procedures\uspGetLeadList.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderIsPatientIDOnMonitor.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPrintJobWaveformData.sql" />
+    <Build Include="User\Stored Procedures\uspGetAllRoles.sql" />
+    <Build Include="old\Stored Procedures\uspGetVisits.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateXmlValue.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPatientWaveForms.sql" />
+    <Build Include="User\Stored Procedures\uspDeleteRole.sql" />
+    <Build Include="old\Stored Procedures\uspGetNumberOfLeadConfigurations.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateAnalysisInsertDateTime.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPatientSettings.sql" />
+    <Build Include="User\Stored Procedures\uspCreateRole.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsByType.sql" />
+    <Build Include="old\Stored Procedures\uspSaveLiveDataSet.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetLegacyPatientWaveForms.sql" />
+    <Build Include="User\Stored Procedures\uspAssignUserRole.sql" />
+    <Build Include="old\Stored Procedures\uspGetAuditLog.sql" />
+    <Build Include="old\Stored Procedures\uspSaveLimitChangeDataSet.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetGlobalSettings.sql" />
+    <Build Include="User\Stored Procedures\uspUpdateUserSetting.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsByTypeUpdate.sql" />
+    <Build Include="old\Stored Procedures\uspSaveLimitAlarmDataSet.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetFactorySettings.sql" />
+    <Build Include="User\Stored Procedures\uspGetUserSettingByType.sql" />
+    <Build Include="old\Stored Procedures\uspPatientSummary.sql" />
+    <Build Include="old\Stored Procedures\uspInsertMiscCodeDetails.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetEnhancedTelemetryPrintJobs.sql" />
+    <Build Include="User\Stored Procedures\uspGetUsers.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveTrendData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveGeneralAlarmsDataSet.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetTwelveLeadPrintJobByPatientReportID.sql" />
+    <Build Include="User\Stored Procedures\uspGetUserPatientList.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientList.sql" />
+    <Build Include="old\Stored Procedures\uspInsertSendSystemDetails.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetTwelveLeadPrintJobByPatientPrintJobID.sql" />
+    <Build Include="User\Stored Procedures\uspGetUserByUserSecurityID.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsByTypeUpdate.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEndTopicSession.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspCheckEnhancedTelemetrySession.sql" />
+    <Build Include="User\Stored Procedures\uspGetUserByName.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteTrendData.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientChannelTimesFromVitals.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPrintJobsListByPatientIDAndStartAndEndDateTime.sql" />
+    <Build Include="User\Stored Procedures\uspGetUserByUserID.sql" />
+    <Build Include="old\Stored Procedures\uspGetPrintJobList.sql" />
+    <Build Include="old\Stored Procedures\uspGetCodeAndCategoryList.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPrintJobByPatientAndPrintJobIDAndPageNumber.sql" />
+    <Build Include="User\Stored Procedures\uspDeleteUser.sql" />
+    <Build Include="old\Stored Procedures\uspDuplicatedPatientList.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEndDeviceSession.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetPrintJobBitmapByJobIDAndPageNumber.sql" />
+    <Build Include="User\Stored Procedures\uspCreateUser.sql" />
+    <Build Include="old\Stored Procedures\uspClearEventLogData.sql" />
+    <Build Include="old\Stored Procedures\uspGetCodeIDByName.sql" />
+    <Build Include="DataLoader\Stored Procedures\uspUltraviewDeleteGatewayDetails.sql" />
+    <Build Include="HL7\Stored Procedures\uspSavePatientVisitInformation.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspSaveBeginTopicSession.sql" />
+    <Build Include="DataLoader\Stored Procedures\uspUltraviewGetGatewaySettings.sql" />
+    <Build Include="HL7\Stored Procedures\uspSavePatientDemographicInformation.sql" />
+    <Build Include="old\Stored Procedures\uspClearAuditLogData.sql" />
+    <Build Include="old\Stored Procedures\uspLoaderPatientPolling.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdateLastPoleDateResultDateInPatientMonitor.sql" />
+    <Build Include="HL7\Stored Procedures\uspInsertInboundSendingSystem.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteSendSystem.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientByExternalID.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdateDateInEncounter.sql" />
+    <Build Include="HL7\Stored Procedures\uspInsertInboundFacility.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteAnalysisTime.sql" />
+    <Build Include="old\Stored Procedures\uspGetWaveFormTimes.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdateActiveSwitchInPatientMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspRemoveTrailingLiveWaveformData.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteOrganizationEntityByCategoryCode.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientWaveformTimeUpdate.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdateActiveSwitchEncounterIDInPatientMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspRemoveTrailingLiveData.sql" />
+    <Build Include="old\Stored Procedures\uspGetAnalysisTime.sql" />
+    <Build Include="old\Stored Procedures\uspSaveWaveformPrintRequestDataSet.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetProductAccessDetails.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientsList.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsTimeUpdate.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientWaveformTimeHistory.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetPatientOrder.sql" />
+    <Build Include="old\Stored Procedures\uspSaveADTMessage.sql" />
+    <Build Include="old\Stored Procedures\uspWriteAnalysisTime.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientTimes.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetPatientMonitor.sql" />
+    <Build Include="Purger\Stored Procedures\uspPurgeTasks.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsTimeUpdate.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientTimeOfDay.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetPatientInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGatewayServerDetails.sql" />
+    <Build Include="old\Stored Procedures\uspSavePrintRequestDataSet.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetMonitorEncounter.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsTimeHistory.sql" />
+    <Build Include="old\Stored Procedures\uspGetTwelveLeadReports.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetGatewayDetails.sql" />
+    <Build Include="old\Stored Procedures\uspDeletePacerSpikeLog.sql" />
+    <Build Include="old\Stored Procedures\uspInsertPatientInformation.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetCodeID.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsTimeHistory.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientChannelTimes.sql" />
+    <Build Include="DM3\Stored Procedures\uspGetChannelType.sql" />
+    <Build Include="old\Stored Procedures\uspWritePacerSpikeLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetVersionNumber.sql" />
+    <Build Include="DM3\Stored Procedures\uspDischargePatient.sql" />
+    <Build Include="old\Stored Procedures\uspGetKeyvalue.sql" />
+    <Build Include="old\Stored Procedures\uspGetMinMaxPatientTimes.sql" />
+    <Build Include="DM3\Stored Procedures\uspDeleteVitals.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventVitalsNew.sql" />
+    <Build Include="old\Stored Procedures\uspInsertMedicalRecordNumberInformation.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddResults.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientStartDateTimeFromVitals.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientWaveFormTimeHistory.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddPerson.sql" />
+    <Build Include="old\Stored Procedures\uspChangeStarterSet.sql" />
+    <Build Include="old\Stored Procedures\uspSaveWaveformDataSet.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddPatientOrder.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsByGlobalDataSystemCodes.sql" />
+    <Build Include="old\Stored Procedures\uspGetSavedEventWaveFormType.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddPatientMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientStartftFromVitals.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientChannelTimes.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddPatient.sql" />
+    <Build Include="old\Stored Procedures\uspWriteEventData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveWaveformLiveDataSet.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddOrUpdateVitals.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderLoadMonitorByMonitorID.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteUnitSettingByType.sql" />
+    <Build Include="DM3\Stored Procedures\uspAddMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspGetDefaultSettingNameList.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateVitalLiveTemp.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdatePerson.sql" />
+    <Build Include="old\Stored Procedures\uspGetCodeByCategoryCode.sql" />
+    <Build Include="old\Stored Procedures\uspInsertAccountInformation.sql" />
+    <Build Include="DM3\Stored Procedures\uspUpdateMedicalRecordNumberMap.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateSystemParameterDebugSwitch.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientTwelveLeadReports.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetAttendingHealthCareProviderData.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateSystemParameterValue.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientEventsCountByType.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetHL7LogOutQueue.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientIdentificationType.sql" />
+    <Build Include="old\Stored Procedures\uspGetAccessSettings.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetHL7LogListOutbound.sql" />
+    <Build Include="old\Stored Procedures\uspInsertEventLogData.sql" />
+    <Build Include="old\Stored Procedures\uspInsertPersonDemographics.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetHL7LogListInbound.sql" />
+    <Build Include="old\Stored Procedures\uspAddNewGatewaySetting.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientEventsByType.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetHL7LogListBoth.sql" />
+    <Build Include="old\Stored Procedures\uspInsertAuditLogData.sql" />
+    <Build Include="old\Stored Procedures\uspInsertOrganizationInformation.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetHL7LogList.sql" />
+    <Build Include="old\Stored Procedures\uspCheckCodeUnique.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientEventTypes.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetLogInQueue.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientAuditLogData.sql" />
+    <Build Include="old\Stored Procedures\uspRemoveAlarm.sql" />
+    <Build Include="HL7\Stored Procedures\uspSetAddressInformation.sql" />
+    <Build Include="old\Stored Procedures\uspCheckNewIDUnique.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientAlarmsByType.sql" />
+    <Build Include="HL7\Stored Procedures\uspSavePatientInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGetLogData.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientAlarms.sql" />
+    <Build Include="HL7\Stored Procedures\uspSaveOruMessages.sql" />
+    <Build Include="old\Stored Procedures\uspGetAuditLogData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveWaveformPrintDataSet.sql" />
+    <Build Include="HL7\Stored Procedures\uspInsertOutboundMessage.sql" />
+    <Build Include="old\Stored Procedures\uspInsertTableRowSpace.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientAlarms.sql" />
+    <Build Include="HL7\Stored Procedures\uspInsertInboundMessage.sql" />
+    <Build Include="old\Stored Procedures\uspQueryPatientDataAndResults.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientAlarmTypes.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetPV1SegmentDataFromADTMsg.sql" />
+    <Build Include="old\Stored Procedures\uspInsertInboundMessage.sql" />
+    <Build Include="old\Stored Procedures\uspSaveWaveformAnnotationDataSet.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetPersonAndPatientDataByPatientID.sql" />
+    <Build Include="old\Stored Procedures\uspUltraviewAddGatewaySettings.sql" />
+    <Build Include="old\Stored Procedures\uspGetReceiveSendAndOrderInformation.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetPatientVisitInformation.sql" />
+    <Build Include="old\Stored Procedures\uspEnhancedTelemetryUpdateGatewaySettings.sql" />
+    <Build Include="old\Stored Procedures\uspInsertEncounterInformation.sql" />
+    <Build Include="HL7\Stored Procedures\uspHL7GetObservationsByPatientID.sql" />
+    <Build Include="old\Stored Procedures\uspEnhancedTelemetryGetGatewaySettings.sql" />
+    <Build Include="old\Stored Procedures\uspGetQueryLivePatientVitalsByMonitor.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetObservationRequestData.sql" />
+    <Build Include="old\Stored Procedures\uspEnhancedTelemetryDeleteGatewayDetails.sql" />
+    <Build Include="old\Stored Procedures\uspInsertEncounterMapInformation.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetLiveVitalsAndPatientDataByQuery.sql" />
+    <Build Include="old\Stored Procedures\uspUltraviewUpdateGatewaySettings.sql" />
+    <Build Include="old\Stored Procedures\uspGetQueryLivePatientVitals.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetLegacyGlobalDataSystemCodes.sql" />
+    <Build Include="old\Stored Procedures\uspSetTask.sql" />
+    <Build Include="old\Stored Procedures\uspSaveBlobPrintRequestDataSet.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetInboundMessages.sql" />
+    <Build Include="old\Stored Procedures\uspGetLiveVitals.sql" />
+    <Build Include="old\Stored Procedures\uspGetLicensedPersonAndPatientDataByPatientID.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetCommonOrderData.sql" />
+    <Build Include="old\Stored Procedures\uspEnhancedTelemetryAddGatewaySettings.sql" />
+    <Build Include="old\Stored Procedures\uspAddApplicationSettings.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdatePersonDemographics.sql" />
+    <Build Include="old\Stored Procedures\uspGetOrganizationDataAsXml.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientMonitorData.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdatePatientVisitInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGetOrganizationData.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientInformationX.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdatePatientInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGetOrganization.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryTechnicalAlarms.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdatePatientInfo.sql" />
+    <Build Include="old\Stored Procedures\uspGetOrganizationInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientChannelList.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateMedicalRecordNumberInformation.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteGatewayServerDetails.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryStatusEvents.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateInboundMessageStatus.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteGatewayDetails.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientChannelList.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateInboundMessageResponse.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePatientSavedEvent.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryBeatTimeLog.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateHealthCareProviderInformation.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateGatewaySetting.sql" />
+    <Build Include="old\Stored Procedures\uspGetIntConfigurationValues.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateEncounterMapInformation.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateEncounter.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteRestrictedUnits.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateEncounterInformation.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePatientDemographicsToMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventsDataSet.sql" />
+    <Build Include="HL7\Stored Procedures\uspUpdateAccountInformation.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateMedicalRecordNumber.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveConfigurationSection.sql" />
+    <Build Include="HL7\Stored Procedures\uspSetInboundMessage.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateMiscellaneousCode.sql" />
+    <Build Include="old\Stored Procedures\uspSendRequestPatientTwelveLeadReport.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetLiveVitalsAndPatientDataForOru.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePatient.sql" />
+    <Build Include="old\Stored Procedures\uspGetRestrictedUnitList.sql" />
+    <Build Include="HL7\Stored Procedures\uspInsertAcknowledgement.sql" />
+    <Build Include="old\Stored Procedures\uspWriteTwelveLeadData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveConfigurationSection.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetStatus.sql" />
+    <Build Include="old\Stored Procedures\uspWriteTemplateSetInfo.sql" />
+    <Build Include="old\Stored Procedures\uspDeletePatientTwelveLeadReport.sql" />
+    <Build Include="HL7\Stored Procedures\uspGetUnitLicense.sql" />
+    <Build Include="old\Stored Procedures\uspWriteBinInfo.sql" />
+    <Build Include="old\Stored Procedures\uspRestrictUnit.sql" />
+    <Build Include="Intesys\Stored Procedures\uspGetAllProducts.sql" />
+    <Build Include="old\Stored Procedures\uspWriteBeatTimeLog.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePatientTwelveLeadReportNew.sql" />
+    <Build Include="Intesys\Stored Procedures\uspUpdateOrganizationRecord.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePersonName.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientTwelveLeadReportNew.sql" />
+    <Build Include="Intesys\Stored Procedures\uspUpdateOrganization.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePerson.sql" />
+    <Build Include="old\Stored Procedures\uspUpdatePatientTwelveLeadReport.sql" />
+    <Build Include="old\Stored Procedures\uspGetSelectedProducts.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientTwelveLeadReport.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderLoadPatientByPatientID.sql" />
+    <Build Include="old\Stored Procedures\uspGetFacility.sql" />
+    <Build Include="old\Stored Procedures\uspInsertSendingSystemInformation.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteEventData.sql" />
+    <Build Include="old\Stored Procedures\uspGetFacilities.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEvent.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientData.sql" />
+    <Build Include="old\Stored Procedures\uspGetFacilityNameByUnitID.sql" />
+    <Build Include="old\Stored Procedures\uspIcsPrintServiceGetActivePrintItem.sql" />
+    <Build Include="old\Stored Procedures\uspGetSysgenDetails.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteFacilityWithChildren.sql" />
+    <Build Include="old\Stored Procedures\uspRetrievePacerSpikeLog.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderLoadMonitorByGatewayInformation.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteMiscellaneousCode.sql" />
+    <Build Include="old\Stored Procedures\uspIcsPrintServiceLoadPrintItems.sql" />
+    <Build Include="old\Stored Procedures\uspGetProductAccess.sql" />
+    <Build Include="old\Stored Procedures\uspGetUnitLicense.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventWaveForm.sql" />
+    <Build Include="old\Stored Procedures\uspSaveConfigurationValues.sql" />
+    <Build Include="old\Stored Procedures\uspGetUnitDetail.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventSummary.sql" />
+    <Build Include="old\Stored Procedures\uspOnMonitor.sql" />
+    <Build Include="old\Stored Procedures\uspGetUnitAutoCollectInterval.sql" />
+    <Build Include="old\Stored Procedures\uspGetEventLogDetails.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventVitals.sql" />
+    <Build Include="old\Stored Procedures\uspGetUnit.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEvent.sql" />
+    <Build Include="old\Stored Procedures\uspGetDebugSettings.sql" />
+    <Build Include="old\Stored Procedures\uspGetUnitsByFacility.sql" />
+    <Build Include="old\Stored Procedures\GetGlobalDataSystemChannelList.sql" />
+    <Build Include="old\Stored Procedures\uspNodeDistribution.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspGetPatientWaveformData.sql" />
+    <Build Include="old\Stored Procedures\uspSetPatientDataCollect.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventBeatTimeLog.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspGetPatientVitalsByGlobalDataSystem.sql" />
+    <Build Include="old\Stored Procedures\uspGetVsvAccess.sql" />
+    <Build Include="old\Stored Procedures\uspGetFeatureListForProducts.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspGetAlarmData.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalSignByChannels.sql" />
+    <Build Include="old\Stored Procedures\uspParents.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspCopyEnhancedTelemetryWaveform.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalSignByChannels.sql" />
+    <Build Include="old\Stored Procedures\uspGetSavedEventBeatTimeLog.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspCopyEnhancedTelemetryVital.sql" />
+    <Build Include="old\Stored Procedures\uspGetApplicationSettingInstances.sql" />
+    <Build Include="old\Stored Procedures\uspGetGatewayDetailsByCategoryAndMethod.sql" />
+    <Build Include="PrintManager\Stored Procedures\uspCopyEnhancedTelemetryVitalAndWaveform.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteApplicationSettings.sql" />
+    <Build Include="old\Stored Procedures\uspTestGroups.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteWaveform.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientWaveformDataByChannels.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventCalipers.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteResult.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryAlarms.sql" />
+    <Build Include="old\Stored Procedures\uspGetGatewayDetailsByCategoryCode.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteReleaseData.sql" />
+    <Build Include="old\Stored Procedures\uspGetApplicationSettings.sql" />
+    <Build Include="old\Stored Procedures\uspUgTest.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeletePrintJob.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientWaveFormDataByChannels.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventCalipers.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteMessageLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryEventsByType.sql" />
+    <Build Include="old\Stored Procedures\uspGetGateWaySettingsByDeviceType.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteInputRate.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateApplicationSettingInstanceID.sql" />
+    <Build Include="old\Stored Procedures\uspGetLanguage.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteHL7Success.sql" />
+    <Build Include="old\Stored Procedures\uspGetEnhancedTelemetryEventsBySubtype.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventMonitorEventLog.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteHL7Pending.sql" />
+    <Build Include="old\Stored Procedures\uspWriteTrendData.sql" />
+    <Build Include="old\Stored Procedures\uspSetLanguage.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteHL7NotRead.sql" />
+    <Build Include="old\Stored Procedures\uspGetSystemLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventMonitorLog.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteHL7Error.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveTemplateSetInfo.sql" />
+    <Build Include="old\Stored Procedures\uspEncounterDetail.sql" />
+    <Build Include="Purger\Stored Procedures\uspGetWaveformHours.sql" />
+    <Build Include="old\Stored Procedures\uspGetCodeList.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventLeadLog.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteGetTaskList.sql" />
+    <Build Include="old\Stored Procedures\uspNextOfKin.sql" />
+    <Build Include="old\Stored Procedures\uspGetProductSecurity.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteGetTask.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteTemplateSetInfo.sql" />
+    <Build Include="old\Stored Procedures\uspGetMinMaxPatientTimesFromVitals.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteEvaluation.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsByType.sql" />
+    <Build Include="old\Stored Procedures\uspGetEventList.sql" />
+    <Build Include="Archive\Stored Procedures\uspNewestFlowsheetResultDateTime.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteEnhancedTelemetryPrintJob.sql" />
+    <Build Include="old\Stored Procedures\uspGetConfigurationValues.sql" />
+    <Build Include="old\Stored Procedures\uspSaveDeviceInfoDataSet.sql" />
+    <Build Include="Archive\Stored Procedures\uspLoadFlowsheetDetail.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteEncounterData.sql" />
+    <Build Include="old\Stored Procedures\uspSetConfigurationValues.sql" />
+    <Build Include="old\Stored Procedures\uspEncounterDetailDrs.sql" />
+    <Build Include="Archive\Stored Procedures\uspFlowsheetResults.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteChPatientSettings.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveBinInfo.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderInsertDuplicateInformation.sql" />
+    <Build Include="Archive\Stored Procedures\uspFlowsheetDistribution.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteChLogData.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteBinInfo.sql" />
+    <Build Include="old\Stored Procedures\uspSaveBeginDeviceSession.sql" />
+    <Build Include="Archive\Stored Procedures\uspFixFlowSheetDetail.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteChAuditLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetMonitorList.sql" />
+    <Build Include="old\Stored Procedures\uspRelCleanUp.sql" />
+    <Build Include="Archive\Stored Procedures\uspInsurancePolicies.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteAllPatientData.sql" />
+    <Build Include="old\Stored Procedures\uspInsertAdminAuditLogData.sql" />
+    <Build Include="old\Stored Procedures\uspMonitorLoaderDeleteDuplicateInformation.sql" />
+    <Build Include="Archive\Stored Procedures\uspInsuranceGuarantor.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteAlarm.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveBeatTimeLogWithSampleRate.sql" />
+    <Build Include="old\Stored Procedures\uspGetGender.sql" />
+    <Build Include="CEI\Stored Procedures\uspUpdateSettings.sql" />
+    <Build Include="Purger\Stored Procedures\uspPurgeTwelveLeadData.sql" />
+    <Build Include="old\Stored Procedures\uspRetrieveBeatTimeLog.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEndPatientSession.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetSettings.sql" />
+    <Build Include="Purger\Stored Procedures\uspPurgePatientByMedicalRecordNumber.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteBeatTimeLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetSaveEventArrhythmiaEventTime.sql" />
+    <Build Include="CEI\Stored Procedures\uspUpdateLog.sql" />
+    <Build Include="Purger\Stored Procedures\uspInsertLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventLeadLog.sql" />
+    <Build Include="old\Stored Procedures\uspGetMethodCode.sql" />
+    <Build Include="CEI\Stored Procedures\uspInsertLog.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderEvent.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientByExternalIDAndDevice.sql" />
+    <Build Include="old\Stored Procedures\uspSaveBeginPatientSession.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetVitalSigns.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderWaveform.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientsBySearch.sql" />
+    <Build Include="old\Stored Procedures\uspEncountersDetails.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetTwoSixSecondWaveSeperate.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderVital.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientLeadChangeLog.sql" />
+    <Build Include="old\Stored Procedures\uspSaveArrhythmiaEventTime.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetQueryCode.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderPrintJob.sql" />
+    <Build Include="old\Stored Procedures\uspDeletePatientSavedEvent.sql" />
+    <Build Include="old\Stored Procedures\uspGetNetwork.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetLicenseUnits.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderEncounterData.sql" />
+    <Build Include="old\Stored Procedures\uspSaveEventWaveForm.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientInformation.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetLicense.sql" />
+    <Build Include="Purger\Stored Procedures\uspDeleteDataLoaderAlarmData.sql" />
+    <Build Include="old\Stored Procedures\uspUpdateDevice.sql" />
+    <Build Include="old\Stored Procedures\uspGetSendSystemList.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetLatestAlarms.sql" />
+    <Build Include="Purger\Stored Procedures\uspGetWaveformParameters.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsByGlobalDataSystemCodes.sql" />
+    <Build Include="old\Stored Procedures\uspSavePatientData.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetAlarmWaveform.sql" />
+    <Build Include="Purger\Stored Procedures\uspGetParameters.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientVitalsTypes.sql" />
+    <Build Include="old\Stored Procedures\uspNodeResults.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetAlarmTextOnly.sql" />
+    <Build Include="TechSupport\Stored Procedures\uspWaveFormIndexRate.sql" />
+    <Build Include="old\Stored Procedures\uspGetProcessedStatisticsList.sql" />
+    <Build Include="old\Stored Procedures\uspGetVersionList.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetAlarmTextAndTwelveSecondWaveForm.sql" />
+    <Build Include="TechSupport\Stored Procedures\uspPurgeTechSupportTables.sql" />
+    <Build Include="old\Stored Procedures\uspGetAuditLogDefault.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientSavedEventVitals.sql" />
+    <Build Include="CEI\Stored Procedures\uspGetAlarmTextAndSixSecondWaveForm.sql" />
+    <Build Include="TechSupport\Stored Procedures\uspMonitorPatientList.sql" />
+    <Build Include="old\Stored Procedures\uspGetLegacyPatientVitalsTypes.sql" />
+    <Build Include="old\Stored Procedures\uspSaveStatusDataSet.sql" />
+    <Build Include="CEI\Stored Procedures\uspPurgeLogData.sql" />
+    <Build Include="TechSupport\Stored Procedures\uspInputRate.sql" />
+    <Build Include="old\Stored Procedures\uspGetPatientInfo.sql" />
+    <Build Include="old\Stored Procedures\uspDeleteUnitSetting.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspSaveConfigurationSetting.sql" />
+    <Build Include="TechSupport\Stored Procedures\uspChannelInformation.sql" />
+    <Build Include="old\Stored Procedures\uspGetNumberOfProcessedStatistics.sql" />
+    <Build Include="old\Stored Procedures\uspIsVIPPatient.sql" />
+    <Build Include="ClinicalAccess\Stored Procedures\uspGetUnitSettings.sql" />
+    <Build Include="old\User Defined Types\utpChannelTypeID.sql" />
+    <Build Include="old\User Defined Types\utpDeviceInfoDataSet.sql" />
+    <Build Include="old\User Defined Types\utpChannelInformation.sql" />
+    <Build Include="old\User Defined Types\utpBlobData.sql" />
+    <Build Include="old\User Defined Types\utpWaveformPrint.sql" />
+    <Build Include="old\User Defined Types\utpWaveformAnnotation.sql" />
+    <Build Include="old\User Defined Types\utpWaveform.sql" />
+    <Build Include="old\User Defined Types\utpVitalValue.sql" />
+    <Build Include="old\User Defined Types\utpTopicSession.sql" />
+    <Build Include="old\User Defined Types\utpStringList.sql" />
+    <Build Include="old\User Defined Types\utpPrintRequestEntry.sql" />
+    <Build Include="old\User Defined Types\utpPrintRequest.sql" />
+    <Build Include="old\User Defined Types\utpPatientUpdateInformation.sql" />
+    <Build Include="old\User Defined Types\utpPatientSession.sql" />
+    <Build Include="old\User Defined Types\utpPatient.sql" />
+    <Build Include="old\User Defined Types\utpOruMessage.sql" />
+    <Build Include="old\User Defined Types\utpNameValue.sql" />
+    <Build Include="old\User Defined Types\utpMonitorIDTable.sql" />
+    <Build Include="old\User Defined Types\utpLimitChange.sql" />
+    <Build Include="old\User Defined Types\utpLimitAlarm.sql" />
+    <Build Include="old\User Defined Types\utpKeyValueTable.sql" />
+    <Build Include="old\User Defined Types\utpItemList.sql" />
+    <Build Include="old\User Defined Types\utpGeneralAlarmData.sql" />
+    <Build Include="old\User Defined Types\utpGlobalDataSystemCodeTable.sql" />
+    <Build Include="old\User Defined Types\utpEvent.sql" />
+    <Build Include="old\User Defined Types\utpDeviceSessionData.sql" />
+    <Build Include="Security\Archive.sql" />
+    <Build Include="Security\CDR.sql" />
+    <Build Include="Security\CEI.sql" />
+    <Build Include="Security\ClinicalAccess.sql" />
+    <Build Include="Security\Configuration.sql" />
+    <Build Include="Security\DataLoader.sql" />
+    <Build Include="Security\DM3.sql" />
+    <Build Include="Security\HL7.sql" />
+    <Build Include="Security\ICS.sql" />
+    <Build Include="Security\Intesys.sql" />
+    <Build Include="Security\MonitorLoader.sql" />
+    <Build Include="Security\old.sql" />
+    <Build Include="Security\PrintManager.sql" />
+    <Build Include="Security\Purger.sql" />
+    <Build Include="Security\Support.sql" />
+    <Build Include="Security\TechSupport.sql" />
+    <Build Include="Security\User.sql" />
+    <Build Include="Security\Utility.sql" />
+    <Build Include="old\Sequences\SequenceBigInt.sql" />
+    <Build Include="old\Sequences\SequenceInt.sql" />
+    <Build Include="old\Sequences\SequenceSmallInt.sql" />
+    <Build Include="old\Sequences\SequenceTinyInt.sql" />
+  </ItemGroup>
+</Project>

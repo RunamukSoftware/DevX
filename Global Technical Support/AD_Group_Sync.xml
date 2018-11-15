@@ -1,0 +1,11 @@
+<AD_Group_Sync_Config>
+	<EnhancedLog>1</EnhancedLog>
+	<SyncIntervalSeconds>60</SyncIntervalSeconds>
+	<AD_Groups>
+		<Group role="Care Provider">CA Care Provider</Group>
+		<Group role="Clinical Manager">CA Clinical Manager</Group>
+		<Group role="ViewOnly">CA View Only</Group>
+		<Group role="ICS Administrator">CA ICS Administrator</Group>
+		<Group role="User Manager">CA User Manager</Group>
+	</AD_Groups>
+</AD_Group_Sync_Config>

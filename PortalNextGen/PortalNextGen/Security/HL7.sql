@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [HL7]
+    AUTHORIZATION [dbo];
+

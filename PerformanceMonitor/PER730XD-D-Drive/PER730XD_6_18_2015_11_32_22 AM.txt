@@ -1,0 +1,45 @@
+
+
+****************PROCESSOR*******************
+Computer Name: PER730XD
+System Type: x64-based PC
+Number Of Physical Processors: 2
+Number of Logical Processors: 32
+NumberOfCores: 8
+Processor: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+
+
+NumberOfCores: 8
+Processor: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+
+
+Total Number of Cores: 16
+****************MEMORY*******************
+Module1: 16384 MB
+Module2: 16384 MB
+Module3: 8192 MB
+Module4: 8192 MB
+Module5: 16384 MB
+Module6: 16384 MB
+Module7: 8192 MB
+Module8: 8192 MB
+Total RAM: 98304 MB
+
+
+****************OPERATING SYSTEM*******************
+Build Number: 9600
+Build Type: Multiprocessor Free
+Caption: Microsoft Windows Server 2012 R2 Standard
+Install Date: 6/10/2015 2:52:26 PM
+OS Language: 1033
+OS Product Suite: 272
+OS Type: 18
+Version: 6.3.9600
+
+
+THE SYSTEM IS NOT 32-BIT
+WRONG WINDOWS EDITION - ENTERPRISE OR DATACENTER EDITION REQUIRED!
+OK - Windows version and SP number verified
+
+
+Updated Script - Tony Green - 06/18/2015

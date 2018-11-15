@@ -1,0 +1,13 @@
+Prepare:
+	Run Analyze on Arrythmia, and save events
+
+The test cases are created with TestStack.White and NUnit frameworks.
+
+How to run the test cases? Two ways.
+1) CAWhiteTest\packages\NUnit.ConsoleRunner.3.4.1\tools\nunit3-console.exe CAWhiteTest.dll --test=CAWhiteTest.BedsideView.BedsideData
+	To debug, need to attach nunit-agent.exe.  Hint: add Console.Read() when start the test case
+
+2) Specify the dll name in config file
+   RunTest.exe dllname suitename testname
+   For example:  RunTest.exe CAWhiteTest BedsideView ParameterSelection
+

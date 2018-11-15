@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [CEI]
+    AUTHORIZATION [dbo];
+

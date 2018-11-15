@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <export_data>
+    <data tbl ="int_waveform" patient_ID_filter="true" />
+    <data tbl ="int_patient_channel" patient_ID_filter="true" />
+    <data tbl ="int_channel_type" patient_ID_filter="true" depend_table="int_patient_channel" depend_table_colm="channel_type_id" />
+    <data tbl ="int_param_timetag" patient_ID_filter="true" />
+    <data tbl ="int_misc_code" />
+    <data tbl ="int_result" patient_ID_filter="true" />
+    <data tbl ="int_alarm" patient_ID_filter="true" />
+    <data tbl ="int_alarm_waveform" patient_ID_filter="true" depend_table="int_alarm" depend_table_colm="alarm_id" />
+    <data tbl ="int_savedevent" patient_ID_filter="true" />
+    <data tbl ="int_SavedEvent_Waveform" patient_ID_filter="true" />
+    <data tbl ="int_savedevent_beat_time_log" patient_ID_filter="true" />
+    <data tbl ="int_savedevent_vitals" patient_ID_filter="true" />
+    <data tbl ="int_savedevent_calipers" patient_ID_filter="true" />
+    <data tbl ="int_savedevent_event_log" patient_ID_filter="true" />
+  </export_data>
+</configuration>

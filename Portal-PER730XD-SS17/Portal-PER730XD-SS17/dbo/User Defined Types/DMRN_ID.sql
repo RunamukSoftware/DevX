@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DMRN_ID]
+    FROM NVARCHAR (40) NULL;
+

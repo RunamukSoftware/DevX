@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DPASSWORD]
+    FROM NVARCHAR (80) NULL;
+

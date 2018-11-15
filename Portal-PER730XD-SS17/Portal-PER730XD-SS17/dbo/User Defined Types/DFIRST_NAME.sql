@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DFIRST_NAME]
+    FROM NVARCHAR (40) NULL;
+

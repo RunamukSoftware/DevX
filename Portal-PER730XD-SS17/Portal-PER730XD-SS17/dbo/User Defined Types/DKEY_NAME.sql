@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DKEY_NAME]
+    FROM VARCHAR (40) NULL;
+

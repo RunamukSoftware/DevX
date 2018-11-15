@@ -1,0 +1,18 @@
+﻿CREATE FUNCTION [old].[fntZeroIfBigger]
+    (
+        @Value AS        INT,
+        @MaximumValue AS INT
+    )
+RETURNS TABLE
+WITH SCHEMABINDING
+AS RETURN
+    SELECT
+        CASE
+            WHEN @Value > @MaximumValue
+                THEN 0
+            ELSE
+                @Value
+        END AS [ReturnValue];
+GO
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Return 0 if value is greater than maxValue, otherwise return the value.', @level0type = N'SCHEMA', @level0name = N'old', @level1type = N'FUNCTION', @level1name = N'fntZeroIfBigger';
+

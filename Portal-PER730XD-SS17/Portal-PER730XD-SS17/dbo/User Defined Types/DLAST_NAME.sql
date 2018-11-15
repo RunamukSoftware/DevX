@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DLAST_NAME]
+    FROM NVARCHAR (40) NULL;
+

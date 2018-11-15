@@ -1,0 +1,20 @@
+﻿CREATE TYPE [old].[utpPatient] AS TABLE (
+    [PatientID]        INT           NOT NULL,
+    [PatientSessionID] INT           NULL,
+    [DeviceSessionID]  INT           NULL,
+    [FirstName]        NVARCHAR (50) NULL,
+    [MiddleName]       NVARCHAR (50) NULL,
+    [LastName]         NVARCHAR (50) NULL,
+    [Gender]           CHAR (1)      NOT NULL,
+    [ID1]              VARCHAR (30)  NULL,
+    [ID2]              VARCHAR (30)  NULL,
+    [DateOfBirth]      DATE          NULL,
+    [Height]           FLOAT (53)    NULL,
+    [HeightUOM]        VARCHAR (25)  NULL,
+    [Weight]           FLOAT (53)    NULL,
+    [WeightUOM]        VARCHAR (25)  NULL,
+    [BodySurfaceArea]  FLOAT (53)    NULL,
+    [Location]         NVARCHAR (50) NULL,
+    [PatientType]      VARCHAR (150) NULL,
+    [Timestamp]        DATETIME2 (7) NOT NULL);
+

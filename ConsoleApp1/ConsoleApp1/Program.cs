@@ -1,9 +1,24 @@
-﻿namespace ConsoleApp1
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
+            DoTheWriting();
+
+            Console.ReadLine();
+        }
+
+        public static void DoTheWriting()
+        {
+            Console.WriteLine("Hello world!");
+
         }
     }
 }

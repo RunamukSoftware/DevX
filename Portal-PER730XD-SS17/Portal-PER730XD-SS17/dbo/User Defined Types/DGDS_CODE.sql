@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DGDS_CODE]
+    FROM VARCHAR (80) NULL;
+

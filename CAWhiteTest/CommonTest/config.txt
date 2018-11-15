@@ -1,0 +1,6 @@
+CAAppPath=C:\Program Files (x86)\Spacelabs\ICS\Clinical Access
+testbed=RW165
+SLMBed=XTQ15(2360)
+ChangeWaveformScale=RW165
+12leads=CP255
+testdll=CAWhiteTest.dll

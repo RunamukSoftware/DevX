@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  consoleapplinux2:
+    image: ${DOCKER_REGISTRY}consoleapplinux2
+    build:
+      context: .
+      dockerfile: ConsoleAppLinux2/Dockerfile

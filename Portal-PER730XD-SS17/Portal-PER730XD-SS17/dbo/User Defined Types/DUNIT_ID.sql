@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[DUNIT_ID]
+    FROM VARCHAR (40) NULL;
+

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BardyDx", "BardyDx\BardyDx.sqlproj", "{12169126-0321-4D6A-A658-5782A93CA6EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12169126-0321-4D6A-A658-5782A93CA6EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D589F7A-9F53-4A7D-A046-2FB9D2113CCB}
+	EndGlobalSection
+EndGlobal

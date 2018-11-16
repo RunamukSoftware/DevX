@@ -1,0 +1,64 @@
+﻿
+-- =============================================
+-- Author:		<Tim Radney>
+-- Create date: <Feb 4th 2016>
+-- Description:	<Capture Waiting Tasks>
+--Copyright 2016 - SQLskills.com
+--Original code   Written by Paul S. Randal, SQLskills.com
+
+    /*============================================================================
+------------------------------------------------------------------------------
+
+  THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF
+  ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED
+  TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+  PARTICULAR PURPOSE.
+============================================================================*/
+-- =============================================
+CREATE PROCEDURE [dbo].[Capture_WaitingTasks]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+INSERT INTO SQLskillsMonitor.dbo.WaitingTasks
+([session_id],[exec_context_id],[scheduler_id],[wait_duration_ms],[wait_type],[blocking_session_id],[resource_description],[Node ID],[text],[database_id],[query_plan],[cpu_time],[CAPTURE_DATE])
+SELECT
+    [owt].[session_id],
+    [owt].[exec_context_id],
+    [ot].[scheduler_id],
+    [owt].[wait_duration_ms],
+    [owt].[wait_type],
+    [owt].[blocking_session_id],
+    [owt].[resource_description],
+    CASE [owt].[wait_type]
+        WHEN N'CXPACKET' THEN
+            RIGHT ([owt].[resource_description],
+                CHARINDEX (N'=', REVERSE ([owt].[resource_description])) - 1)
+        ELSE NULL
+    END AS [Node ID],
+    --[es].[program_name],
+    [est].text,
+    [er].[database_id],
+    [eqp].[query_plan],
+    [er].[cpu_time],
+	getdate() AS [CAPTURE_DATE]
+
+FROM sys.dm_os_waiting_tasks [owt]
+INNER JOIN sys.dm_os_tasks [ot] ON
+    [owt].[waiting_task_address] = [ot].[task_address]
+INNER JOIN sys.dm_exec_sessions [es] ON
+    [owt].[session_id] = [es].[session_id]
+INNER JOIN sys.dm_exec_requests [er] ON
+    [es].[session_id] = [er].[session_id]
+OUTER APPLY sys.dm_exec_sql_text ([er].[sql_handle]) [est]
+OUTER APPLY sys.dm_exec_query_plan ([er].[plan_handle]) [eqp]
+WHERE
+    [es].[is_user_process] = 1
+ORDER BY
+    [owt].[session_id],
+    [owt].[exec_context_id];
+
+
+END

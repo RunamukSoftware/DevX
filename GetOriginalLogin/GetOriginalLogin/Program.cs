@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using System.Data.Sql;
 using System.Data.SqlClient;
 
 namespace GetOriginalLogin
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             SqlConnectionStringBuilder connectionBuilder = new SqlConnectionStringBuilder();
 
@@ -24,17 +19,20 @@ namespace GetOriginalLogin
             SqlConnection connection = new SqlConnection(connectionBuilder.ConnectionString);
             connection.Open();
 
-            SqlCommand command = new SqlCommand(@"SELECT ORIGINAL_LOGIN(), USER_ID(), USER_NAME(), SYSTEM_USER, SUSER_NAME(), SUSER_SNAME();", connection);
+            SqlCommand command = new SqlCommand(@"SELECT ORIGINAL_LOGIN(), USER_ID(), USER_NAME(), SYSTEM_USER, SUSER_NAME(), SUSER_SNAME(), SUSER_SID();", connection);
 
             SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
             while (reader.Read())
             {
                 Console.WriteLine(@"ORIGINAL_LOGIN(): {0}", reader.GetSqlString(0));
-                Console.WriteLine(@"USER_ID(): {0}", reader.GetSqlValue(1));
+                Console.WriteLine(@"USER_ID(): {0}", reader.GetSqlInt16(1));
                 Console.WriteLine(@"USER_NAME(): {0}", reader.GetSqlString(2));
                 Console.WriteLine(@"SYSTEM_USER: {0}", reader.GetSqlString(3));
                 Console.WriteLine(@"SUSER_NAME(): {0}", reader.GetSqlString(4));
                 Console.WriteLine(@"SUSER_SNAME(): {0}", reader.GetSqlString(5));
+
+                //SqlBytes suserSid = reader.GetSqlBytes(6);
+                //Console.WriteLine(@"SUSER_SID(): {0}", suserSid);
             }
 
             Console.WriteLine("\r\nPress Enter to finish.");
